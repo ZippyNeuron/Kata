@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ZippyNeuron.Kata.Test/ZippyNeuron.Kata.Test.csproj" />
+  <Project Path="ZippyNeuron.Kata/ZippyNeuron.Kata.csproj" />
+</Solution>
