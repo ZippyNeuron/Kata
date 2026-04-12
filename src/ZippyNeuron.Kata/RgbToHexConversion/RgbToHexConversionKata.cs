@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace ZippyNeuron.Kata.RgbToHexConversion;
+﻿namespace ZippyNeuron.Kata.RgbToHexConversion;
 
 public class RgbToHexConversionKata
 {
