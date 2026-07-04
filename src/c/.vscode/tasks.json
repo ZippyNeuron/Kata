@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build (return-the-day).c",
+            "type": "shell",
+            "command": "gcc ./src/return-the-day.c -o ./src/build/return-the-day.out",
+            "problemMatcher": [],
+            "options": {
+              "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "Build (make-uppercase).c",
+            "type": "shell",
+            "command": "gcc ./src/make-uppercase.c -o ./src/build/make-uppercase.out",
+            "problemMatcher": [],
+            "options": {
+              "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
