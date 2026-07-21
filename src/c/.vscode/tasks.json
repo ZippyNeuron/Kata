@@ -2,10 +2,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build (return-the-day).c",
+            "label": "Build C",
             "type": "shell",
-            "command": "gcc ./${fileBasenameNoExtension}.c -o ./${fileBasenameNoExtension}.out",
-            "problemMatcher": [],
+            "command": "gcc",
+               "args": [
+                   "-g",
+                   "-lm",
+                   "${workspaceFolder}/${fileBasename}",
+                   "-o",
+                   "${workspaceFolder}/${fileBasenameNoExtension}.out"
+               ],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
