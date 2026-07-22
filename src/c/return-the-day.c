@@ -1,11 +1,7 @@
 #include <stdio.h>
 
-#define MAXINPUTLENGTH 128
-#define RETURN 10
-#define NULLTERMINATOR 0
-#define NULLTERMINATORLEN 1
-
-const char *get_day(int day_number);
+#define STARTDAYOFWEEK 1
+#define ENDDAYOFWEEK 7
 
 char *day_names[] = {
     "Sunday",
@@ -17,14 +13,16 @@ char *day_names[] = {
     "Saturday"
 };
 
-int main() {
-    printf("%s\n", get_day(1));
-    return 0;
-}
-
 const char *get_day(int day_number) {
-    if (day_number < 1 || day_number > 7)
+    extern char * day_names[];
+
+    if (day_number < STARTDAYOFWEEK || day_number > ENDDAYOFWEEK)
         return "Wrong, please enter a number between 1 and 7";
     
     return day_names[day_number - 1];
+}
+
+int main() {
+    printf("%s\n", get_day(1));
+    return 0;
 }

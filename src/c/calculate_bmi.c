@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 const char * bmi(int weight, double height);
 
@@ -14,7 +15,7 @@ int main() {
 
 const char * bmi(int weight, double height)
 {
-    double bmi = weight / (height * height);
+    double bmi = weight / pow(height, 2.0);
 
     if (bmi <= 18.5) {
         return "Underweight";
